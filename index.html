@@ -17,13 +17,53 @@
                 <h4>Bài tập mảng</h4>
             </div>
             <div class="card-body">
-                <div class="form-group">
-                    <label for="">Nhập vào số nguyên</label>
-                    <input id="ipNum" type="number" class="form-control">
-                </div>
+                <form>
+                    <div class="form-group">
+                        <label for="">Nhập vào số nguyên</label>
+                        <input placeholder="0" id="ipNum" type="number" class="form-control">
+                    </div>
+                    <div class="d-flex">
+                        <div class="form-group">
+                            <label for="">Nhập vị trí cần hoán đổi</label>
+                            <input placeholder="0" id="ipIndex1" type="number" class="form-control">
+                        </div>
+                        <div class="form-group ml-5">
+                            <label for="">Nhập vị trí cần hoán đổi</label>
+                            <input placeholder="0" id="ipIndex2" type="number" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Nhập số thực</label>
+                        <input placeholder="0.00" type="number" id="ipNum1" class="form-control">
+                    </div>
+                    <button type="button" id="btnAdd" class="btn btn-success">Thêm số vào mảng</button>
+                    <button type="button" id="btnCalcTotal" class="btn btn-success">Tính tổng số dương</button>
+                    <button type="button" id="btnCountPos" class="btn btn-success">Đếm số dương</button>
+                    <button type="button" id="btnFindMin" class="btn btn-success mt-2">Tìm số nhỏ nhất</button>
+                    <button type="button" id="btnFindMinPos" class="btn btn-success mt-2">Tìm số dương nhỏ nhất</button>
+                    <button type="button" id="btnFindLastEven" class="btn btn-success mt-2">Tìm số chẵn cuối
+                        cùng</button>
+                    <button type="button" id="btnSwap" class="btn btn-success mt-2">Hoán đổi 2 số</button>
+                    <button type="button" id="btnSortAsc" class="btn btn-success mt-2">Sắp xếp mảng tăng dần</button>
+                    <button type="button" id="btnFirstPrime" class="btn btn-success mt-2">Tìm số nguyên tố đầu tiên</button>
+                    <button type="button" id="btnAddNum2" class="btn btn-success mt-2">Thêm số thực</button>
+                    <button type="button" id="btnCountInt" class="btn btn-success mt-2">Đếm số nguyên</button>
+                    <button type="button" id="btnCompare" class="btn btn-success mt-2">So sánh số âm và số dương</button>
+                </form>
             </div>
             <div class="card-footer">
                 <p class="alert alert-danger" id="txtArray"></p>
+                <p class="alert alert-danger" id="txtArray2"></p>
+                <p class="alert alert-danger" id="txtTotal"></p>
+                <p class="alert alert-danger" id="txtCountPos"></p>
+                <p class="alert alert-danger" id="txtMinNum"></p>
+                <p class="alert alert-danger" id="txtMinPos"></p>
+                <p class="alert alert-danger" id="txtLastEven"></p>
+                <p class="alert alert-danger" id="txtSwap"></p>
+                <p class="alert alert-danger" id="txtSortAsc"></p>
+                <p class="alert alert-danger" id="txtPrime"></p>
+                <p class="alert alert-danger" id="txtCountInt"></p>
+                <p class="alert alert-danger" id="txtCompare"></p>
             </div>
         </card>
     </div>
@@ -36,7 +76,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
         crossorigin="anonymous"></script>
-        <script src="./js/main.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
